@@ -1,27 +1,27 @@
-import React from 'react'
+// src/components/Profile.jsx
+import React from "react";
 
 const Profile = () => {
   return (
-    <div>
-        <div className="profile justify-items-end">
-        <div className="flex gap-3">
-          {/* profile placeholder */}
-          <div className="w-[3vw] h-[3vw]  bg-yellow-200 rounded-full overflow-hidden">
-            <img
-              src="dp.jpg"           // path sahi rakho: public me ho to "/dp.jpg"
-              alt="profile"
-              className="w-[40vw] h-[4vw] object-cover "
-            />
-          </div>
+    <div className="w-full flex justify-end">
+      <div className="flex items-center gap-[1vw]">
+        {/* Circular avatar */}
+        <div className="w-[3vw] border-1 border-white aspect-square rounded-full overflow-hidden flex items-center justify-center">
+          <img
+            src="/dp.jpg"  
+            alt="profile"
+            className="w-full h-full object-cover block"
+          />
+        </div>
 
-          <div className="font-[Montserrat]">
-            <p className="text-lg ">Gukhan Sakthivel</p>
-            <p className="text-xs ">Manager (Ride and Handling)</p>
-          </div>
+        {/* Name & role */}
+        <div className="font-[Montserrat]">
+          <p className="text-lg">Gukhan Sakthivel</p>
+          <p className="text-xs opacity-70">Manager (Ride and Handling)</p>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Profile
+export default Profile;

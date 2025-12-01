@@ -19,8 +19,25 @@ html, body, #root {
     font-weight: 400;
   }
   @font-face {
+    font-family: "Poppins-semibold";
+    src: url("./assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Poppins-bold";
+    src: url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  @font-face {
     font-family: "Montserrat";
     src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
     font-style: italic;
     font-weight: 400;
+  }
+
+  button {
+    cursor: pointer;
   }
